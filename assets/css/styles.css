@@ -1,0 +1,45 @@
+/* ===== Animations ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in { animation: fadeIn 1s ease-out forwards; }
+.delay-100 { animation-delay: .1s; }
+.delay-200 { animation-delay: .2s; }
+.delay-300 { animation-delay: .3s; }
+
+/* ===== Project cards ===== */
+.project-card { transition: all .3s ease; }
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+/* ===== Slider arrows ===== */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  z-index: 10;
+  opacity: .9;
+  transition: all .3s ease;
+}
+.slider-arrow:hover { transform: translateY(-50%) scale(1.08); }
+.slider-arrow-left { left: 10px; }
+.slider-arrow-right { right: 10px; }
+
+/* ===== Nice chips (skills icons) ===== */
+.chip-bg { background-color: #F5EEFF; }
+.chip-fg { color: #9B87F5; }
+
+/* ===== Prevent horizontal scroll ===== */
+html, body { overflow-x: hidden; }

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashwaq Portfolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gray-50 font-sans text-gray-800">
+
+
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0"></div>
+
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-center space-x-4">
+            <a href="#home" id="home-nav"
+               class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Home</a>
+            <a href="#projects" id="projects-nav"
+               class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Projects</a>
+            <a href="#skills" id="skills-nav"
+               class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Skills</a>
+            <a href="#education" id="education-nav"
+               class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Education</a>
+            <a href="#courses" id="courses-nav"
+               class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Courses</a>
+          </div>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-[#DCBFFF] hover:text-[#C9A5FF] focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+      <a href="#home" id="mobile-home-nav"
+         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Home</a>
+      <a href="#projects" id="mobile-projects-nav"
+         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Projects</a>
+      <a href="#skills" id="mobile-skills-nav"
+         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Skills</a>
+      <a href="#education" id="mobile-education-nav"
+         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Education</a>
+      <a href="#courses" id="mobile-courses-nav"
+         class="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-[#DCBFFF] hover:bg-[#F5EEFF]">Courses</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-50 to-indigo-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in md:pr-12">
+          <h1 class="text-4xl md:text-4xl font-bold text-gray-800 mb-4">
+            Hi, I'm <span class="text-[#DCBFFF]">Ashwaq Almalki</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Data Scientist | Analyst</h2>
+          <p class="text-gray-600 mb-8 text-lg leading-relaxed">
+            Transforming complex data into actionable insights. Passionate about building intelligent
+            systems and uncovering hidden patterns in data to drive business decisions.
+          </p>
+
+          <div class="flex space-x-4">
+            <a href="https://github.com/almalkiashwaq0" target="_blank"
+               class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition duration-300">
+               <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ashwaq-data" target="_blank"
+               class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
+               <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a href="https://www.kaggle.com/ashwaq000" target="_blank"
+               class="bg-[#20BEFF] text-white p-3 rounded-full hover:bg-[#1a9fd8] transition duration-300">
+               <i class="fab fa-kaggle text-xl"></i>
+            </a>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1V3Vt9He7Tlu9mhWNtOlT9VG1EEkjhLQK/view?usp=sharing"
+             target="_blank" rel="noopener"
+             class="mt-8 inline-block bg-[#DCBFFF] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#C9A5FF] transition duration-300 shadow-lg"
+             aria-label="Open resume on Google Drive">
+            View Resume
+          </a>
+        </div>
+
+        <div class="md:w-1/2 flex justify-center animate-fade-in delay-200">
+          <div class="w-64 h-64 md:w-80 md:h-80 overflow-hidden">
+            <img src="assets/img/ashwaq-avatar.png" alt="Ashwaq Almalki" class="w-full h-full object-cover"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-fade-in">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">My Projects</h2>
+        <div class="w-20 h-1 bg-[#DCBFFF] mx-auto"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Here are some of my recent data analysis and machine learning projects that showcase my skills and expertise.
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="slider-arrow slider-arrow-left hidden sm:flex" id="prev-ml">
+          <i class="fas fa-chevron-left text-[#DCBFFF]"></i>
+        </div>
+
+        <div class="relative overflow-x-auto px-4 sm:px-10 scroll-smooth snap-x snap-mandatory overscroll-x-contain sm:overflow-x-hidden"
+             style="scroll-padding-inline:1rem">
+          <div class="w-full flex gap-4 snap-x snap-mandatory" id="slider-ml">
+            <!-- P1 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/ljp-graphical-abstract.jpg"
+                     alt="Arabic Legal Judgment Prediction" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">NLP</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Python</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Arabic Legal Judgment Prediction</h3>
+                <p class="text-gray-600 mb-4">
+                  Fine-tuned AraBERT on 19k Saudi rulings using aggregation methods to predict court outcomes, achieving 86% accuracy.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/SA-Legal-Judgment-Prediction/tree/main?tab=readme-ov-file"
+                     class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                  <a href="https://www.mdpi.com/1999-5903/17/10/439"
+                     class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Research Paper →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P2 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/skin-disease-classification-cover.png"
+                     alt="Skin Disease Classification" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">Computer Vision</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Python</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Skin Disease Classification</h3>
+                <p class="text-gray-600 mb-4">
+                  Trained a deep learning model on HAM10000 using ResNet50 + SVM to classify 7 diseases with 86% accuracy.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Skin-Disease-Classification/tree/main"
+                     class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P3 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/stock-market-clustering.png"
+                     alt="Saudi Stock Market Clustering" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded">Machine Learning</span>
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Python</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Saudi Stock Market Clustering</h3>
+                <p class="text-gray-600 mb-4">
+                  Unsupervised learning (PCA + Agglomerative) on Tadawul trading data; silhouette score 0.621 with 4 clusters.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Stock-clustering" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                  <a href="https://tadawul-deployment.streamlit.app/" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Model Deployment →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P4 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/shawer-dashboard-cover.jpg"
+                     alt="Shawer – Saudi E-commerce Market Analysis" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">NLP</span>
+                  <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Power BI</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Shawer – Saudi E-commerce Market Analysis</h3>
+                <p class="text-gray-600 mb-4">
+                  Topic modeling & sentiment analysis on Maroof reviews (SetFit up to 92% acc) + interactive dashboard.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Shawer-Saudi-E-commerce-Market-Analysis" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiZGQyYWUxNDgtMmQ1Yi00Y2NkLTk5ZWMtM2Q5ODk1MWU3ZjUzIiwidCI6ImI0NTNkOTFiLTZhYzEtNGI2MS1iOGI4LTVlNjVlNDIyMjMzZiIsImMiOjl9" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Power BI Dashboard →</a>
+                  <a href="https://www.kaggle.com/datasets/ashwaq000/maroof-store-reviews-with-sentiment-and-topic-labels" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Dataset →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P5 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/riyadh-real-estate-histogram.png"
+                     alt="Riyadh Real Estate Market" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                  <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Streamlit</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Riyadh Real Estate Market</h3>
+                <p class="text-gray-600 mb-4">
+                  EDA revealing pricing drivers & neighborhood patterns; interactive Streamlit storytelling.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Analysis-of-Riyadh-s-Real-Estate-Market" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                  <a href="https://usecase6-project3-hatoon-group.streamlit.app/" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Streamlit Storytelling →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P6 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/university-rankings-correlation.png"
+                     alt="Analyzing University Rankings" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                  <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Data Analysis</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Analyzing University Rankings</h3>
+                <p class="text-gray-600 mb-4">
+                  Cleaning + EDA on global rankings; patterns & comparisons incl. Saudi universities.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Analyzing-University-Rankings" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P7 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/saudi-job-analysis-dashboard.png"
+                     alt="Analysis of Saudi Job Applications" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Python</span>
+                  <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Streamlit</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Analysis of Saudi Job Applications</h3>
+                <p class="text-gray-600 mb-4">
+                  Cleaning, EDA & an interactive dashboard to uncover hiring trends and insights.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://github.com/almalkiashwaq0/Analysis-of-Saudi-Jop-application" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">View Project →</a>
+                  <a href="https://usecase5jadarat.streamlit.app/" class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Streamlit Storytelling →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- P8 -->
+            <div class="project-card bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100 mx-0 basis-full flex-none snap-center">
+              <div class="h-72 overflow-hidden">
+                <img src="assets/img/saudi-emergency-dashboard.png"
+                     alt="Saudi Emergency Reports Dashboard" class="h-72 w-full object-contain mx-auto">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center mb-2">
+                  <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Power BI</span>
+                  <span class="bg-lime-100 text-lime-800 text-xs font-semibold px-2.5 py-0.5 rounded ml-2">Excel</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Saudi Emergency Reports Dashboard (2023)</h3>
+                <p class="text-gray-600 mb-4">
+                  Interactive Power BI dashboard of ambulance reports by category, region, year, and per-capita rate.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                  <a href="https://app.powerbi.com/view?r=eyJrIjoiYzdhNGI2ZWQtZTViNS00YTliLWFiMzktYTcxNTFhYWNmNWI5IiwidCI6ImI0NTNkOTFiLTZhYzEtNGI2MS1iOGI4LTVlNjVlNDIyMjMzZiIsImMiOjl9"
+                     class="text-[#DCBFFF] hover:text-[#C9A5FF] font-medium">Power BI Dashboard →</a>
+                </div>
+              </div>
+            </div>
+
+          </div> 
+        </div>
+
+        <div class="slider-arrow slider-arrow-right hidden sm:flex" id="next-ml">
+          <i class="fas fa-chevron-right text-[#DCBFFF]"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-fade-in">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">My Skills</h2>
+        <div class="w-20 h-1 bg-[#DCBFFF] mx-auto"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          I've developed a diverse set of skills that allow me to tackle complex data problems from multiple angles.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-8 mb-8">
+        <div class="bg-white p-8 rounded-lg shadow-md animate-fade-in delay-100">
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-5 mx-auto">
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fab fa-python text-[#DCBFFF]"></i></div><span class="text-gray-700">Python</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-database text-[#DCBFFF]"></i></div><span class="text-gray-700">SQL</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-chart-pie text-[#DCBFFF]"></i></div><span class="text-gray-700">Power BI</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-file-excel text-[#DCBFFF]"></i></div><span class="text-gray-700">Excel</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-globe text-[#DCBFFF]"></i></div><span class="text-gray-700">Web Scraping</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-chart-bar text-[#DCBFFF]"></i></div><span class="text-gray-700">Data Analysis</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-chart-line text-[#DCBFFF]"></i></div><span class="text-gray-700">Data Visualization</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-file-word text-[#DCBFFF]"></i></div><span class="text-gray-700">Microsoft Office</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-brain text-[#DCBFFF]"></i></div><span class="text-gray-700">Deep Learning</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fab fa-docker text-[#DCBFFF]"></i></div><span class="text-gray-700">Docker</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fab fa-git-alt text-[#DCBFFF]"></i></div><span class="text-gray-700">Git</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-project-diagram text-[#DCBFFF]"></i></div><span class="text-gray-700">PySpark</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-brain text-[#DCBFFF]"></i></div><span class="text-gray-700">Machine Learning</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-language text-[#DCBFFF]"></i></div><span class="text-gray-700">NLP</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-server text-[#DCBFFF]"></i></div><span class="text-gray-700">FastAPI</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-tv text-[#DCBFFF]"></i></div><span class="text-gray-700">Streamlit</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fas fa-robot text-[#DCBFFF]"></i></div><span class="text-gray-700">HuggingFace</span></div>
+            <div class="flex items-center"><div class="bg-[#F5EEFF] p-2 rounded-full mr-3"><i class="fab fa-microsoft text-[#DCBFFF]"></i></div><span class="text-gray-700">Azure</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-16 bg-white scroll-mt-24 lg:w-screen lg:relative lg:left-1/2 lg:right-1/2 lg:-mx-[50vw]">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-fade-in">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Education</h2>
+        <div class="w-20 h-1 bg-[#DCBFFF] mx-auto"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          My academic background has provided me with a strong foundation in mathematics, statistics, and computer science.
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="absolute top-0 bottom-0 border-l-2 border-[#DCBFFF] left-4 md:left-1/2 md:-translate-x-1/2"></div>
+
+        <div class="relative mb-8 w-full animate-fade-in delay-200">
+          <div class="absolute top-6 left-4 md:left-1/2 md:-translate-x-1/2 w-8 h-8 bg-[#DCBFFF] rounded-full z-10 flex items-center justify-center">
+            <i class="fas fa-graduation-cap text-white"></i>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div class="pl-14 md:pl-0 md:w-5/12 md:text-right md:pr-8">
+              <h3 class="text-xl font-bold text-gray-800">MSc in Computer Science</h3>
+              <p class="text-[#DCBFFF] font-medium">Jeddah University</p>
+              <p class="text-gray-500">2021 - Present</p>
+            </div>
+            <div class="pl-14 md:pl-8 md:w-5/12 mt-4 md:mt-0">
+              <p class="text-gray-600">Focused on statistical modeling, machine learning, and big data technologies. Thesis on "Legal Judgment Prediction".</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative mb-8 w-full animate-fade-in delay-300">
+          <div class="absolute top-6 left-4 md:left-1/2 md:-translate-x-1/2 w-8 h-8 bg-[#DCBFFF] rounded-full z-10 flex items-center justify-center">
+            <i class="fas fa-graduation-cap text-white"></i>
+          </div>
+          <div class="flex flex-col md:flex-row md:items-start md:justify-between">
+            <div class="pl-14 md:pl-0 md:w-5/12 md:text-right md:pr-8">
+              <h3 class="text-xl font-bold text-gray-800">BSc in Computer Science</h3>
+              <p class="text-[#DCBFFF] font-medium">Umm Al-Qura University</p>
+              <p class="text-gray-500">2014 - 2019</p>
+            </div>
+            <div class="pl-14 md:pl-8 md:w-5/12 mt-4 md:mt-0">
+              <p class="text-gray-600">Majored in Computer Science with minors in Mathematics and Statistics. Graduated with honors.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-fade-in">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Courses & Certifications</h2>
+        <div class="w-20 h-1 bg-[#DCBFFF] mx-auto"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Continuous learning is key in the fast-evolving field of data science. Here are some of the courses I've completed.
+        </p>
+      </div>
+
+   
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fas fa-university text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Tuwaiq Academy</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Data Science and Machine Learning Bootcamp</h3>
+            <p class="text-gray-600 mb-4 text-sm">Intensive training covering Python, data analysis, visualization, and machine learning algorithms with real-world projects.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2024</span>
+              <a href="https://drive.google.com/file/d/1TN81yDLTLE48e2UQdsjjfR5dlcnw5DJt/view?usp=sharing" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-200">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-graduation-cap text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Coursera</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">IBM Data Science Professional Certificate</h3>
+            <p class="text-gray-600 mb-4 text-sm">Comprehensive program covering data science methodologies, Python, SQL, visualization, and machine learning using IBM tools.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2024</span>
+              <a href="https://www.coursera.org/account/accomplishments/professional-cert/X8H8K3GEL8W8?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-300">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-database text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Udemy</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">The Complete SQL Bootcamp</h3>
+            <p class="text-gray-600 mb-4 text-sm">Mastered SQL fundamentals including complex queries, joins, aggregations, and database design principles.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2021</span>
+              <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-17fd94f6-6653-4d2f-86bf-346abd5758f3.pdf" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-100">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-bolt text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Data Camp</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Introduction to PySpark</h3>
+            <p class="text-gray-600 mb-4 text-sm">Distributed data processing with PySpark, including RDDs, DataFrames, and Spark SQL for big data analytics.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2025</span>
+              <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/6daeaaa34adb23e8c67eb3f65794ae81facb5d67" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-200">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-table text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Data Camp</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Data Analysis in Excel</h3>
+            <p class="text-gray-600 mb-4 text-sm">Advanced Excel functions, pivot tables, data visualization, and automation for business analytics.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2025</span>
+              <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/9350b12c0bac6480a2e32b3451728135eac3d311" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-200">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-cloud text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Udacity</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Generative AI with AWS</h3>
+            <p class="text-gray-600 mb-4 text-sm">Hands-on training on Generative AI and LLMs, including prompt engineering, fine-tuning, and deploying AI models on AWS.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2025</span>
+              <a href="https://www.udacity.com/certificate/e/0210fd2a-6587-11f0-a8f5-53a973e40d2b" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-300">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-brands fa-microsoft text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">ICAIRE & SDAIA (Powered by Microsoft)</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Women Elevate Program</h3>
+            <p class="text-gray-600 mb-4 text-sm">Hands-on program on AI, cloud, and machine learning by ICAIRE & SDAIA, powered by Microsoft.</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2025</span>
+              <a href="https://drive.google.com/file/d/1grT9rBqW20VCh1VUSrznUKEhYfwtPkxA/view?usp=sharing" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 animate-fade-in delay-300">
+          <div class="p-6">
+            <div class="flex items-center mb-3">
+              <div class="bg-purple-100 p-2 rounded-full mr-3"><i class="fa-solid fa-chart-pie text-purple-600"></i></div>
+              <span class="text-sm font-medium text-gray-600">Microsoft Press | LinkedIn</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Complete Guide to Power BI for Data Analysts</h3>
+            <p class="text-gray-600 mb-4 text-sm">Power BI from fundamentals to advanced analytics (DAX, modeling, interactive dashboards).</p>
+            <div class="flex justify-between items-center">
+              <span class="text-xs font-medium text-gray-500">Completed: 2025</span>
+              <a href="https://www.linkedin.com/learning/certificates/32dc3ac2168360fe3d9d13156adcb6c9829c149f4cb6b96de54f97c3e083f62a?trk=share_certificate" class="text-[#DCBFFF] hover:text-[#C9A5FF] text-sm font-medium">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 animate-fade-in">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+        <div class="w-20 h-1 bg-[#DCBFFF] mx-auto"></div>
+        <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+          Have a project in mind or want to discuss potential opportunities? Feel free to reach out!
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="animate-fade-in delay-100">
+          <h3 class="text-xl font-bold text-gray-800 mb-6">Contact Information</h3>
+
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="bg-[#F5EEFF] p-3 rounded-full mr-4"><i class="fas fa-envelope text-[#DCBFFF]"></i></div>
+              <div>
+                <h4 class="font-medium text-gray-700">Email</h4>
+                <a href="mailto:almalkiashwag1@gmail.com" class="text-[#DCBFFF] hover:text-[#C9A5FF]">almalkiashwag1@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-[#F5EEFF] p-3 rounded-full mr-4"><i class="fas fa-phone-alt text-[#DCBFFF]"></i></div>
+              <div>
+                <h4 class="font-medium text-gray-700">Phone</h4>
+                <p class="text-gray-600">+966 56 272 1350</p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div class="bg-[#F5EEFF] p-3 rounded-full mr-4"><i class="fas fa-map-marker-alt text-[#DCBFFF]"></i></div>
+              <div>
+                <h4 class="font-medium text-gray-700">Location</h4>
+                <p class="text-gray-600">Jeddah, Saudi Arabia</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <h4 class="font-medium text-gray-700 mb-4">Follow Me</h4>
+            <div class="flex space-x-4">
+              <a href="https://github.com/almalkiashwaq0" target="_blank" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-700 transition duration-300"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/ashwaq-data" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.kaggle.com/ashwaq000" target="_blank" class="bg-[#20BEFF] text-white p-3 rounded-full hover:bg-[#1a9fd8] transition duration-300"><i class="fab fa-kaggle"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-fade-in delay-200">
+          <form class="space-y-4" id="contactForm" action="https://formspree.io/f/xldlqjwq" method="POST">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+              <input type="text" id="name" name="name"
+                     class="w-full px-4 py-2 bg-purple-50 border border-purple-100 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                     placeholder="Your Name" required
+                     oninvalid="this.setCustomValidity('Please enter your name')"
+                     oninput="this.setCustomValidity('')">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+              <input type="email" id="email" name="email"
+                     class="w-full px-4 py-2 bg-purple-50 border border-purple-100 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                     placeholder="Your Email" required
+                     oninvalid="this.setCustomValidity('Please enter a valid email')"
+                     oninput="this.setCustomValidity('')">
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+              <textarea id="message" name="message" rows="4"
+                        class="w-full px-4 py-2 bg-purple-50 border border-purple-100 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                        placeholder="Your Message" required
+                        oninvalid="this.setCustomValidity('Please enter your message')"
+                        oninput="this.setCustomValidity('')"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-[#DCBFFF] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#C9A5FF] transition duration-300">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Popup -->
+  <div id="success-popup" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white rounded-lg shadow-lg p-6 w-80 text-center relative">
+      <h2 class="text-lg font-semibold text-gray-800 mb-2">Thanks for reaching out!</h2>
+      <p class="text-gray-600 mb-4">I’ll get back to you as soon as possible.</p>
+      <button id="close-popup" class="mt-2 px-4 py-2 bg-[#DCBFFF] hover:bg-[#C9A5FF] text-white rounded-lg transition">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="relative left-1/2 right-1/2 -mx-[50vw] w-screen bg-[#DCBFFF]">
+    <footer class="text-gray-800 py-8">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-3 md:mb-0 text-center md:text-left">
+            <span class="text-lg font-bold">Ashwaq Almalki</span>
+            <p class="text-gray-700 text-sm mt-1">Data Scientist & Analyst</p>
+          </div>
+          <div class="flex flex-wrap justify-center md:justify-end space-x-4 text-sm mt-3 md:mt-0">
+            <a href="#home" class="text-gray-700 hover:text-gray-900">Home</a>
+            <a href="#projects" class="text-gray-700 hover:text-gray-900">Projects</a>
+            <a href="#skills" class="text-gray-700 hover:text-gray-900">Skills</a>
+            <a href="#education" class="text-gray-700 hover:text-gray-900">Education</a>
+            <a href="#courses" class="text-gray-700 hover:text-gray-900">Courses</a>
+            <a href="#contact" class="text-gray-700 hover:text-gray-900">Contact</a>
+          </div>
+        </div>
+        <div class="border-t border-[#C9A5FF] mt-6 pt-6 text-center text-gray-700 text-sm">
+          <p>&copy; 2025 Ashwaq Almalki. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS -->
+  <script defer src="assets/js/app.js"></script>
+</body>
+</html>
